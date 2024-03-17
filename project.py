@@ -108,7 +108,7 @@ def main():
         for book in books:
             if search_query.lower() in book['서명'].lower() or \
                 search_query.lower() in book['자료실'].lower() or \
-                search_query.lower() in book['도서관 명'].lower() or \
+                search_query.lower() in book['도서관명'].lower() or \
                 search_query.lower() in book['등록번호'].lower() or \
                 search_query.lower() in book['저자'].lower() or \
                 search_query.lower() in book['출판사'].lower():
