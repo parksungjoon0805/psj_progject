@@ -1,3 +1,5 @@
+## 받아온 csv 파일이 너무 커서 절반으로 자름
+
 import pandas as pd
 
 # 원본 CSV 파일 경로
