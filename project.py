@@ -99,7 +99,7 @@ def main():
         st.title('도서 정보')
 
         # 도서 검색 기능 구현
-        search_query = st.text_input('도서 검색', placeholder='책 이름, 자료실, 등록번호, 서명, 저자, 출판사')
+        search_query = st.text_input('도서 검색', placeholder='도서관 명, 책 이름, 자료실, 등록번호, 서명, 저자, 출판사')
 
         books = load_books()
 
@@ -108,6 +108,7 @@ def main():
         for book in books:
             if search_query.lower() in book['서명'].lower() or \
                 search_query.lower() in book['자료실'].lower() or \
+                search_query.lower() in book['도서관명'].lower() or \
                 search_query.lower() in book['등록번호'].lower() or \
                 search_query.lower() in book['저자'].lower() or \
                 search_query.lower() in book['출판사'].lower():
